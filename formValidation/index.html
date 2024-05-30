@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- Style and Js files -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="/index.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <form id="form">
+        <div id="signup-form">
+          <div id="form-title">Signup Form</div>
+          <!--Body -->
+          <div id="form-body">
+            <div class="form-field">
+              <label>E-Mail</label><input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-field">
+              <label>Password</label><input type="password" name="password" id="password" required />
+            </div>
+            <div class="form-field">
+              <label>Retype Password</label
+              ><input type="password" name="repassword" id="rePassword" />
+            </div>
+            <div class="form-field">
+              <label>Full Name</label
+              ><input type="text" name="fullname" minlength="3" id="fullName" required />
+            </div>
+            <div class="form-field" style="justify-content: flex-start;">
+              <label>Are you a merchant?</label>
+              <input type="checkbox" name="isMerchant" />
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
